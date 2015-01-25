@@ -13,7 +13,7 @@
  * Usage:
  *
  * 	$ ./cdecl <declaration>
- * 	
+ *
  * 	declaration - the declaration to be parsed. Note that a space is required
  * 	between each token in the command line (e.g., char* is not valid).
  *
@@ -57,7 +57,7 @@ main(int argc, char *argv[]) {
 
 	if (find_identifier(stack) == -1)
 		fatal("invalid declaration: no identifier");
-	
+
 	if (parse_declarator(stack) == -1) {
 		if (*curr)
 			fatal("syntax error in declaration near %s", *curr);
@@ -94,9 +94,9 @@ find_identifier(struct token_stack *stack) {
 				if (stack_push(stack, &t) == -1)
 					pexit("stack_push");
 				break;
-				
+
 			case TOKEN_UNKNOWN:
-				fatal("internal error: unkown token type for %s", *curr); 
+				fatal("internal error: unkown token type for %s", *curr);
 				break;
 		}
 
