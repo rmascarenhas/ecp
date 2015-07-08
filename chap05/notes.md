@@ -13,7 +13,7 @@ an the `-m` option to the linker).
 exchange for a small runtime penalty. However, it brings benefits - small
 virtual memory consumption; and sharing a copy of libraries across a system.
 
-* Moreover, when libraries are updates, dynamically linked programs use the
+* Moreover, when libraries are updated, dynamically linked programs use the
 new version without the need to relink them.
 
 * Linkers add the library path in the executable itself; thus, these library

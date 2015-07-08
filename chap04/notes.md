@@ -16,8 +16,8 @@ until runtime_.
 are permitted to be used at the left side of an assignment.
 
 * Array addresses are static and known at compile time. In contrast, the current
-value of a pointer must be retrieved at runtime. For that reason, **arrays are not
-modifiable `lvalue`s**.
+value of a pointer can be changed and is retrieved at runtime. For that reason,
+**arrays are not modifiable `lvalue`s**.
 
 * Only the definition of an array must contain its size limit. Later declarations
 can merely contain the type information, without the size (being an _incomplete type_).
